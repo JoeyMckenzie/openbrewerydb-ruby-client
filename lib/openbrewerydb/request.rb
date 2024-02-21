@@ -7,8 +7,14 @@ module OpenBreweryDb
 
     def initialize(endpoint, options = nil)
       @endpoint = endpoint
-      @timeout = options&.fetch(:timeout) || OpenBreweryDb::Metadata::DEFAULT_TIMEOUT_SECONDS
-      @per_page = options&.fetch(:per_page) || OpenBreweryDb::Metadata::DEFAULT_PER_PAGE
+
+      if options.nil?
+        @timeout = OpenBreweryDb::Metadata::DEFAULT_TIMEOUT_SECONDS
+        @per_page = OpenBreweryDb::Metadata::DEFAULT_PER_PAGE
+      else
+        @timeout = options.fetch(:timeout, nil) || OpenBreweryDb::Metadata::DEFAULT_TIMEOUT_SECONDS
+        @per_page = options.fetch(:per_page, nil) || OpenBreweryDb::Metadata::DEFAULT_PER_PAGE
+      end
     end
   end
 end
