@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
-RSpec.describe Openbrewerydb do
-  it "has a version number" do
-    expect(Openbrewerydb::VERSION).not_to be nil
+RSpec.describe OpenBreweryDb do
+  it "has the correct version number" do
+    expect(OpenBreweryDb::VERSION).not_to be nil
+    expect(OpenBreweryDb::VERSION).to be("0.1.1")
   end
 
   it "does something useful" do
-    expect(true).to eq(true)
+    expect(false).to eq(false)
   end
 end

@@ -1,0 +1,10 @@
+module OpenBreweryDb
+  # Sends an HTTP request to Open Brewery DB at the specified endpoint.
+  class Request
+    @endpoint: String
+    @timeout: Integer
+    @per_page: Integer
+
+    def initialize: (String endpoint, Hash[String, Integer] | nil options) -> void
+  end
+end

@@ -1,11 +1,7 @@
 module OpenBreweryDb
-  VERSION: String
-
   class Metadata
     BASE_URL: String
     DEFAULT_TIMEOUT_SECONDS: Integer
     DEFAULT_PER_PAGE: Integer
   end
-
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
 end

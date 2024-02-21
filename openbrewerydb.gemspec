@@ -4,7 +4,7 @@ require_relative "lib/openbrewerydb/version"
 
 Gem::Specification.new do |spec|
   spec.name = "openbrewerydb"
-  spec.version = Openbrewerydb::VERSION
+  spec.version = OpenBreweryDb::VERSION
   spec.authors = ["Joey"]
   spec.email = ["joey.mckenzie27@gmail.com"]
 
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Write a longer description or delete this line."
   spec.homepage = "https://github.com/joeymckenzie/openbrewerydb-ruby-client"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.4"
+  spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["allowed_push_host"] = "Set to your gem server 'https://example.com'"
 
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   # spec.add_dependency "example-gem", "~> 1.0"
   spec.add_dependency "rake", "~> 13.0"
   spec.add_dependency "rspec", "~> 3.0"
-  spec.add_dependency "rubocop", "~> 1.21"
+  spec.add_dependency "rubocop", "~> 1.60"
   spec.add_dependency "steep", "~> 1.6"
 
   # For more information and examples about making a new gem, check out our

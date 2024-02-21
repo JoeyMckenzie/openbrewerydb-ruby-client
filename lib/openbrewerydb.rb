@@ -2,5 +2,6 @@
 
 require_relative "openbrewerydb/version"
 
-module Openbrewerydb
+# An API client for Open Brewery DB.
+module OpenBreweryDb
 end
