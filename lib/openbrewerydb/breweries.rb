@@ -3,8 +3,10 @@
 module OpenBreweryDb
   # An API connector for various brewery endpoints
   class Breweries
-    def voidis
-      puts "testt"
-    end
+    def list; end
+
+    def search; end
+
+    def find(id); end
   end
 end

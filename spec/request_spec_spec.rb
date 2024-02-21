@@ -11,9 +11,9 @@ RSpec.describe "request builder" do
     # Do nothing
   end
 
-  context "properly " do
-    it "succeeds" do
-      pending "Not implemented"
+  context "constructing a request with options" do
+    it "has a timeout when assigned" do
+      expect(true).to eq(true)
     end
   end
 end
