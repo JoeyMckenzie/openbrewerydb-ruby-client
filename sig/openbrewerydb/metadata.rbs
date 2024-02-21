@@ -1,7 +1,0 @@
-module OpenBreweryDb
-  class Metadata
-    BASE_URL: String
-    DEFAULT_TIMEOUT_SECONDS: Integer
-    DEFAULT_PER_PAGE: Integer
-  end
-end
